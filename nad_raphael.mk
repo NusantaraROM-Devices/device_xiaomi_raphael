@@ -8,7 +8,6 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-$(call inherit-product, packages/apps/NusantaraParts/nadproject.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
