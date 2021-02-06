@@ -100,7 +100,12 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
     init.qcom.rc \
-    init.recovery.qcom.rc
+    init.qcom.usb.sh \
+    init.recovery.qcom.rc \
+    dt2w.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/bin/init.dt2w.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/init.dt2w.sh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init-qcril-data.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/init-qcril-data.rc
