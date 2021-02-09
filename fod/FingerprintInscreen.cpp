@@ -23,11 +23,7 @@
 
 #include <cmath>
 #include <fstream>
-#include <hardware_legacy/power.h>
-#include <poll.h>
-#include <sys/stat.h>
 
-#define FINGERPRINT_ACQUIRED_VENDOR 6
 #define COMMAND_NIT 10
 #define PARAM_NIT_630_FOD 1
 #define PARAM_NIT_NONE 0
@@ -93,7 +89,6 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 Return<void> FingerprintInscreen::onPress() {
     acquire_wake_lock(PARTIAL_WAKE_LOCK, LOG_TAG);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
-    WriteToFile(DIM_LAYER_HBM_PATH, 1);
     return Void();
 }
 
