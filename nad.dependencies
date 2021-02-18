@@ -7,26 +7,8 @@
    },
    {
    "remote"       : "github",
-   "repository"   : "mans0amador/android_vendor_xiaomi",
+   "repository"   : "NusantaraROM-Devices/vendor_xiaomi_raphael",
    "target_path"  : "vendor/xiaomi",
    "branch"       : "11"
    }    
-   {
-   "remote"       : "github",
-   "repository"   : "LineageOS/android_hardware_qcom_display",
-   "target_path"  : "hardware/qcom-caf/sm8150/display",
-   "branch"       : "lineage-18.1-caf-sm8150"
-   },
-   {
-   "remote"       : "github",
-   "repository"   : "LineageOS/android_hardware_qcom_media",
-   "target_path"  : "hardware/qcom-caf/sm8150/media",
-   "branch"       : "lineage-18.1-caf-sm8150"
-   },
-   {
-   "remote"       : "github", 
-   "repository"   : "LineageOS/android_hardware_qcom_audio",
-   "target_path"  : "hardware/qcom-caf/sm8150/audio",
-   "branch"       : "lineage-18.1-caf-sm8150"
-   }
 ]
