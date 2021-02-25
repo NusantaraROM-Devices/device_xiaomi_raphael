@@ -18,6 +18,12 @@
    "branch"       : "eleven"
   },
   {
+    "remote": "priv",
+    "repository": "android_packages_apps_NusantaraParts",
+    "target_path": "packages/apps/NusantaraParts", 
+    "branch": "11"
+   },
+  {
    "remote"       : "github",
    "repository"   : "NusantaraROM-Devices/vendor_xiaomi_raphael",
    "target_path"  : "vendor/xiaomi",
