@@ -152,6 +152,7 @@ DISABLE_RILD_OEM_HOOK := true
 
 # Sepolicy
 include device/qcom/sepolicy/SEPolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Power
